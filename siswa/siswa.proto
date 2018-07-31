@@ -1,0 +1,17 @@
+package siswa;
+
+// The greeting service definition.
+service Siswa {
+  // Sends a greeting
+  rpc ViewSiswa (SiswaRequest) returns (SiswaReply) {}
+}
+
+// The request message containing the user's name.
+message SiswaRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings
+message SiswaReply {
+  string message = 1;
+}
